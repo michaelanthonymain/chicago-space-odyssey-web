@@ -24,5 +24,7 @@ var exoPlanets = [
   // US Cell Field
   ['82 G. Eridani b', 41.830273, -87.633348, 7, 'stuff'],
   // Wrigley
-  ['HD 40307 g', 41.947854, -87.655642, 8, 'stuff']
+  ['HD 40307 g', 41.947854, -87.655642, 8, 'stuff'],
+  // Museum of Science and Industry
+  ['HD 85512 b', 41.790573, -87.583066, 9, 'stuff']
 ]
