@@ -17,9 +17,11 @@
 
 /*For the nav bar -----------------*/
 header {
+  top: 0;
   height: 50px;
   width: 100%;
-  background: black;
+  background: url(banner.jpg);
+  background-position:center;
   font-family: sans-serif;
 }
 
