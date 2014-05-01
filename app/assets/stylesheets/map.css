@@ -1,0 +1,26 @@
+html body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#map{
+  /*margin-top: 50px;*/
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background: black;
+}
+
+.hashtag {
+  color: white;
+  font-family: sans-serif;
+  line-height: 50px;
+  float: right;
+  margin-right: 10px;
+}
