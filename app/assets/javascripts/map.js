@@ -37,7 +37,3 @@ function setMarkers(map,markers) {
     bounds.extend(planetLatLng);
   }
 }
-
-$(function() {
-  initMaps();
-})
