@@ -20,13 +20,21 @@ header {
   height: 50px;
   width: 100%;
   background: black;
+  font-family: sans-serif;
 }
 
 .hashtag {
+  line-height: 50px;
   color: white;
-  font-family: sans-serif;
+  float: right;
+  margin-right: 10px;
+}
+
+.sign-in-out a {
+  /*text-decoration: none;*/
   line-height: 50px;
   float: right;
   margin-right: 10px;
+  color: white;
 }
 /*---------------------------------*/
