@@ -36,5 +36,11 @@ header {
   float: right;
   margin-right: 10px;
   color: white;
+  vertical-align: middle;
+}
+
+.sign-in-out img {
+  /*line-height: 50px;*/
+  vertical-align: middle;
 }
 /*---------------------------------*/
