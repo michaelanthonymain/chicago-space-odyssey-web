@@ -10,17 +10,3 @@ html body {
   width: 100%;
   position: absolute;
 }
-
-header {
-  height: 50px;
-  width: 100%;
-  background: black;
-}
-
-.hashtag {
-  color: white;
-  font-family: sans-serif;
-  line-height: 50px;
-  float: right;
-  margin-right: 10px;
-}
