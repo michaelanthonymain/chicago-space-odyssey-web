@@ -1,0 +1,7 @@
+<h1>Planets</h1>
+
+<ul>
+<% for planet in @planets.models: %>
+    <li><%= planet.get('name') %></li>
+<% end %>
+</ul>

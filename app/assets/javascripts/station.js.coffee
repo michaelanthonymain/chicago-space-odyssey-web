@@ -4,9 +4,8 @@ window.Station =
   Views: {}
   Routers: {}
   initialize: ->
-    new Station.Routers.Exoplanets()
+    new Station.Routers.Planets()
     Backbone.history.start()
-        pushState: true
 
 $(document).ready ->
   Station.initialize()

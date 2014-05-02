@@ -1,0 +1,3 @@
+<h1>Planets</h1>
+
+<%= @planets.length %>
