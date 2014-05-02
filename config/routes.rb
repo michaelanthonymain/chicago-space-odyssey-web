@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-scope "api" do
-  resources :planets
-end
+  scope "api" do
+    resources :planets
+  end
 
   root to: 'users#index'
 
@@ -12,4 +12,7 @@ end
   # Sessions
   get "/auth/twitter/callback" => "sessions#create"
   get "/signout" => "sessions#destroy", as: :signout
+
+  # Locations
+  resources :locations, :defaults => {:format => "json"}
 end
