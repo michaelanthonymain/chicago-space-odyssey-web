@@ -15,7 +15,7 @@ class Station.Routers.Planets extends Backbone.Router
 
 
 
-    show: ->
+    show: (id) ->
       @model = @collection.get(id)
        # view = new Station.Views.PlanetsShow(model: @model)
        # $('#container').html(view.render().el)
