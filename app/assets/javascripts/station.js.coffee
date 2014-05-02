@@ -1,9 +1,9 @@
-window.Station =
-  Models: {}
-  Collections: {}
-  Views: {}
-  Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+# window.Station =
+#   Models: {}
+#   Collections: {}
+#   Views: {}
+#   Routers: {}
+#   # initialize: -> alert 'Hello from Backbone!'
 
-$(document).ready ->
-  Station.initialize()
+# $(document).ready ->
+#   Station.initialize()
