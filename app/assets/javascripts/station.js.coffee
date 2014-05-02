@@ -3,7 +3,9 @@ window.Station =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: ->
+    new Station.Routers.Planets()
+    Backbone.history.start()
 
 $(document).ready ->
   Station.initialize()

@@ -1,0 +1,31 @@
+.planets-sidebar {
+  width: 25%;
+  padding: 0;
+  margin: 0;
+}
+
+.planets-sidebar-items:first-child {
+  border-top: 1px solid gray;
+}
+
+.planets-sidebar-items {
+  background: linear-gradient(#E7E7E7, #C2C3C4);
+  padding: 10px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  display: block;
+}
+
+.planet-name {
+  width: 65%;
+  margin: 0;
+  text-align: center;
+  font-size: 100%;
+  font-family: "Helvetica";
+  display: inline-block;
+}
+
+.system-image {
+  width: 28%;
+}
