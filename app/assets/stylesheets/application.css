@@ -32,7 +32,7 @@ header {
   margin-right: 10px;
 }
 
-.sign-in-out a {
+.nav a, .sign-in-out a {
   line-height: 50px;
   float: right;
   margin-right: 10px;
@@ -42,5 +42,10 @@ header {
 
 .sign-in-out img {
   vertical-align: middle;
+}
+
+.nav{
+  float: left;
+  margin-left: 10px;
 }
 /*---------------------------------*/
