@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  scope "api" do
-    resources :planets
-  end
-
   root to: 'users#index'
 
   # User Location
