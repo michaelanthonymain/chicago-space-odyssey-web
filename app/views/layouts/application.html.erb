@@ -10,22 +10,19 @@
   <%= csrf_meta_tags %>
 </head>
 
-<header>
-  <a href='/'>Home</a>
-  <a href='/#planets'>My Locations</a>
-  <div class="hashtag">#ToscheStation</div>
-  <% if logged_in? %>
-    <div class="sign-in-out"><%= link_to 'Sign Out', signout_path %></div>
-  <% else %>
-    <div class="sign-in-out">
-      <%= link_to '/auth/twitter' do %>
-        <%= image_tag 'sign-in-with-twitter-gray.png' %>
-      <% end %>
-    </div>
-  <% end %>
-</header>
-
 <body>
+  <header>
+    <div class="hashtag">#ToscheStation</div>
+    <% if logged_in? %>
+      <div class="sign-in-out"><%= link_to 'Sign Out', signout_path %></div>
+    <% else %>
+      <div class="sign-in-out">
+        <%= link_to '/auth/twitter' do %>
+          <%= image_tag 'sign-in-with-twitter-gray.png' %>
+        <% end %>
+      </div>
+    <% end %>
+  </header>
 
 <%= yield %>
 
