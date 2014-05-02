@@ -1,3 +1,4 @@
 class Location < ActiveRecord::Base
-  has_one :planet
+  has_one  :system
+  has_many :visits
 end

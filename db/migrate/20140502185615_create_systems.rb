@@ -1,6 +1,6 @@
-class CreatePlanets < ActiveRecord::Migration
+class CreateSystems < ActiveRecord::Migration
   def change
-    create_table :planets do |t|
+    create_table :systems do |t|
       t.string  :name
       t.text    :description
       t.string  :url
