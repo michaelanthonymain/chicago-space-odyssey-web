@@ -11,10 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140501182832) do
+ActiveRecord::Schema.define(version: 20140502212555) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "caches", force: true do |t|
+    t.text     "text"
+    t.string   "image_path"
+    t.integer  "location_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "locations", force: true do |t|
     t.string   "name"
@@ -26,7 +35,7 @@ ActiveRecord::Schema.define(version: 20140501182832) do
     t.datetime "updated_at"
   end
 
-  create_table "planets", force: true do |t|
+  create_table "systems", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.string   "url"
@@ -45,6 +54,13 @@ ActiveRecord::Schema.define(version: 20140501182832) do
     t.string   "location"
     t.string   "token"
     t.string   "secret"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "visits", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
