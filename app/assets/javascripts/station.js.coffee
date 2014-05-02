@@ -6,6 +6,7 @@ window.Station =
   initialize: ->
     new Station.Routers.Planets()
     Backbone.history.start()
+    initMaps()
 
 $(document).ready ->
   Station.initialize()
