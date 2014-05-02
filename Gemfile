@@ -52,3 +52,6 @@ gem 'twitter'
 # The CORS spec allows web applications to make cross domain
 # AJAX calls without using workarounds such as JSONP.
 gem 'rack-cors', :require => 'rack/cors'
+
+# For Heroku
+gem 'rails_12factor', group: :production
