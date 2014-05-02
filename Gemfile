@@ -47,3 +47,8 @@ gem 'backbone-on-rails'
 
 gem 'omniauth-twitter'
 gem 'twitter'
+
+# Rack::Cors: support for Cross-Origin Resource Sharing (CORS).
+# The CORS spec allows web applications to make cross domain
+# AJAX calls without using workarounds such as JSONP.
+gem 'rack-cors', :require => 'rack/cors'
