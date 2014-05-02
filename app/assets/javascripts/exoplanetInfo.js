@@ -12,15 +12,21 @@ var exoPlanets = [
   // Merch Mart
   ['Gliese 876 d', 41.888477, -87.635407, 5, 'stuff'],
   // This is the one that's at DBC
-  ["Gliese 682 b",41.889911, -87.637657, 4,'<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Gliese 682 b</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>Gliese 682 b</b> is a planet that has about 4.5 times the mass of the Earth. It orbits the star Gliese 682, which is a red dwarf star and is listed as 49th nearest star to the Sun, being about 16 light years away from the Earth. Even though it is close by, it is dim with an magnitude of 10.95 and thus requires a relatively powerful telescope to be seen. It is located in the constellation of Scorpius, near the bright star Theta Scorpii. It has two candidate planets, one of which is in the habitable zone.</p>'+
-      '<p>Info from <a href="http://en.wikipedia.org/wiki/Gliese_682">here</a>.</p>'+
-      '</div>'+
-      '</div>'],
+  ["Gliese 682 b",41.889911, -87.637657, 4,
+    '<div id="content">'+
+    '<div id="siteNotice"></div>'+
+    '<h1 id="firstHeading" class="firstHeading">Gliese 682</h1>'+
+    '<div id="bodyContent">'+
+    '<p><b>Gliese 682</b>, or GJ 682, is a red dwarf star and is listed as 49th '+
+    'nearest star to the Sun, being about 16 light years away from the Earth. That means that '+
+    "if you could stand on Gliese 682's planet, Gliese 682 b, right now and looked at the Earth, "+
+    "it would look like it's the year "+ ((new Date().getFullYear())-16) +".</p>"+
+    '<p>The marker is at Dev Bootcamp, which is where this app was built. It is about 2.29 miles'+
+    ' from the Adler Planetarium.</p>'+
+    '<p>Resources:</p>'+
+    '<ul><li>Gliese 682 on <a href="http://en.wikipedia.org/wiki/Gliese_682">Wikipedia</a></li></ul>'+
+    '</div></div>'
+  ],
   // US Cell Field
   ['82 G. Eridani b', 41.830273, -87.633348, 9, 'stuff'],
   // Wrigley
