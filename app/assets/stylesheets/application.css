@@ -17,12 +17,12 @@
 
 /*For the nav bar -----------------*/
 header {
-  top: 0;
-  height: 50px;
-  width: 100%;
   background: url(banner.jpg);
   background-position:center;
   font-family: sans-serif;
+  z-index: 99999999999;
+  box-shadow: 0 0 10px black;
+  height:50px;
 }
 
 .hashtag {
@@ -33,7 +33,6 @@ header {
 }
 
 .sign-in-out a {
-  /*text-decoration: none;*/
   line-height: 50px;
   float: right;
   margin-right: 10px;
@@ -42,7 +41,6 @@ header {
 }
 
 .sign-in-out img {
-  /*line-height: 50px;*/
   vertical-align: middle;
 }
 /*---------------------------------*/
