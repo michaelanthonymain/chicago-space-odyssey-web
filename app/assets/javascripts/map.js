@@ -1,12 +1,9 @@
 var infoWindow = null
-// var planetIcon = 'planet.png';
 var bounds = new google.maps.LatLngBounds();
 
 function initMaps() {
-  var myLatLng = new google.maps.LatLng(41.883217, -87.628670)
   var mapOptions = {
-    center: myLatLng,
-    // zoom: 13 Not really needed with the auto fitting to bounds
+    center: new google.maps.LatLng(41.883217, -87.628670)// Chicago
   }
   var map = new google.maps.Map(document.getElementById("map"),
       mapOptions);

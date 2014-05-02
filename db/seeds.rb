@@ -1,28 +1,28 @@
-exoplanets = [
+exosystems = [
   # // Planetarium
   ["Our Solar System", 'Adler Planetarium', 41.866333, -87.606783],
   # // Soldier Field
-  ['Alpha Centauri Bb', 'Soldier Field', 41.862074, -87.616804],
+  ['Alpha Centauri B', 'Soldier Field', 41.862074, -87.616804],
   # // Navy Pier Children's Museum
-  ['Tau Ceti e', "Navy Pier Children's Museum", 41.891105, -87.609497],
+  # ['Tau Ceti e', "Navy Pier Children's Museum", 41.891105, -87.609497], Can't do because same system as below
   # // Navy Pier Ferris Wheel
-  ['Tau Ceti f', "Navy Pier Ferris Wheel", 41.891712, -87.607244],
+  ['Tau Ceti', "Navy Pier Ferris Wheel", 41.891712, -87.607244],
   # // Sears Tower
-  ['GJ 180 b', "Willis Tower", 41.878900, -87.635772],
+  ['GJ 180', "Willis Tower", 41.878900, -87.635772],
   # // Merch Mart
-  ['Gliese 876 d', 'Merchandise Mart', 41.888477, -87.635407],
+  ['Gliese 876', 'Merchandise Mart', 41.888477, -87.635407],
   # // This is the one that's at DBC
-  ["Gliese 682 b", "Dev Bootcamp", 41.889911, -87.637657],
+  ["Gliese 682", "Dev Bootcamp", 41.889911, -87.637657],
   # // US Cell Field
-  ['82 G. Eridani b', "US Cellular Field", 41.830273, -87.633348],
+  ['82 G. Eridani', "US Cellular Field", 41.830273, -87.633348],
   # // Wrigley
-  ['HD 40307 g', "Wrigley Field", 41.947854, -87.655642],
+  ['HD 40307', "Wrigley Field", 41.947854, -87.655642],
   # // Museum of Science and Industry
-  ['HD 85512 b', "The Museum of Science and Industry", 41.790573, -87.583066]
+  ['HD 85512', "The Museum of Science and Industry", 41.790573, -87.583066]
 ]
 
-exoplanets.each do |x|
+exosystems.each do |x|
   loc = Location.create!(name: x[1], latitude: x[2], longitude: x[3])
-  planet = Planet.create!(name: x[0])
-  loc.planet = planet
+  system = System.create!(name: x[0])
+  loc.system = system
 end
