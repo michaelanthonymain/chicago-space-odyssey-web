@@ -2,17 +2,17 @@ var exoPlanets = [
   // Planetarium
   ["Our Solar System", 41.866333, -87.606783, 7, 'stuff'],
   // Soldier Field
-  ['Alpha Centauri Bb', 41.862074, -87.616804, 8, 'stuff'],
+  ['Alpha Centauri B', 41.862074, -87.616804, 8, 'stuff'],
   // Navy Pier Children's Museum
-  ['Tau Ceti e', 41.891105, -87.609497, 3, 'stuff'],
+  // ['Tau Ceti e', 41.891105, -87.609497, 3, 'stuff'], Can't do because it's the same system as below
   // Navy Pier Ferris Wheel
-  ['Tau Ceti f', 41.891712, -87.607244, 2, 'stuff'],
+  ['Tau Ceti', 41.891712, -87.607244, 2, 'stuff'],
   // Sears Tower
-  ['GJ 180 b', 41.878900, -87.635772, 6, 'stuff'],
+  ['GJ 180', 41.878900, -87.635772, 6, 'stuff'],
   // Merch Mart
-  ['Gliese 876 d', 41.888477, -87.635407, 5, 'stuff'],
+  ['Gliese 876', 41.888477, -87.635407, 5, 'stuff'],
   // This is the one that's at DBC
-  ["Gliese 682 b",41.889911, -87.637657, 4,
+  ["Gliese 682",41.889911, -87.637657, 4,
     '<div id="content">'+
     '<div id="siteNotice"></div>'+
     '<h1 id="firstHeading" class="firstHeading">Gliese 682</h1>'+
@@ -28,9 +28,9 @@ var exoPlanets = [
     '</div></div>'
   ],
   // US Cell Field
-  ['82 G. Eridani b', 41.830273, -87.633348, 9, 'stuff'],
+  ['82 G. Eridani', 41.830273, -87.633348, 9, 'stuff'],
   // Wrigley
-  ['HD 40307 g', 41.947854, -87.655642, 1, 'stuff'],
+  ['HD 40307', 41.947854, -87.655642, 1, 'stuff'],
   // Museum of Science and Industry
-  ['HD 85512 b', 41.790573, -87.583066, 10, 'stuff']
+  ['HD 85512', 41.790573, -87.583066, 10, 'stuff']
 ]
