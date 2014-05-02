@@ -20,7 +20,7 @@ var exoPlanets = [
   ['Alpha Centauri A/B', 41.862074, -87.616804, 8,
     '<div id="content">'+
     '<div id="siteNotice"></div>'+
-    '<h1 id="firstHeading" class="firstHeading">Alpha Centauri</h1>'+
+    '<h1 id="firstHeading" class="firstHeading">Alpha Centauri A/B</h1>'+
     '<div id="bodyContent">'+
     '<p><b>Alpha Centauri</b> is the closest extra-solar star system to our own, being only about 4 light years away. Although it looks like '+
     'one star to the naked eye, it is actually a binary star system, which means it consists of two stars that orbit '+
@@ -45,13 +45,16 @@ var exoPlanets = [
     '<h1 id="firstHeading" class="firstHeading">Tau Ceti</h1>'+
     '<div id="bodyContent">'+
     '<p><b>Tau Ceti</b> is a star in the constellation Cetus. It is very similar to our Sun, except it is about '+
-    "75% of the Sun's mass.</p>"+
-    '<p>The marker is at Soldier Field, which is where the Chicago Bears football team plays. It is about 0.6 miles'+
+    "75% of the Sun's mass. At about 12 light years away, it is one of the closest stars to the Sun. Because it is "+
+    "12 light years away, light that is reaching Tau Ceti right now left the Earth in the year "+ ((new Date().getFullYear())-12) +".</p>"+
+    "<p>Tau Ceti has 5 confirmed planets: Tau Ceti b, c, d, e, and f. Two of those planets, e and f, are within Tau Ceti's "+
+    "habitable zone, which makes them prime targets for the search for extra-terrestrial life.</p>"+
+    "<p>The marker is at Navy Pier's Ferris Wheel. It is about 1.7 miles"+
     ' from the Adler Planetarium.</p>'+
     '<p>Resources:</p>'+
     '<ul>'+
-    "<li>Our Galactic Neighborhood on <a href='http://interstellar.jpl.nasa.gov/interstellar/probe/introduction/neighborhood.html'>NASA's Website</a></li>"+
-    '<li>Alpha Centauri on <a href="http://en.wikipedia.org/wiki/Alpha_Centauri">Wikipedia</a></li>'+
+    "<li>Tau Ceti on <a href='http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Tau_Ceti.html'>Princeton University's Website</a></li>"+
+    '<li>Tau Ceti on <a href="http://en.wikipedia.org/wiki/Tau_Ceti">Wikipedia</a></li>'+
     '</ul>'+
     '</div></div>'
   ],
@@ -69,7 +72,7 @@ var exoPlanets = [
     'nearest star to the Sun, being about 16 light years away from the Earth. That means that '+
     "if you could stand on Gliese 682's planet, Gliese 682 b, right now and looked at the Earth, "+
     "it would look like it's the year "+ ((new Date().getFullYear())-16) +".</p>"+
-    '<p>The marker is at Dev Bootcamp, which is where this app was built. It is about 2.29 miles'+
+    '<p>The marker is at Dev Bootcamp, which is where this app was built by 5 students for their final project. It is about 2.29 miles'+
     ' from the Adler Planetarium.</p>'+
     '<p>Resources:</p>'+
     '<ul><li>Gliese 682 on <a href="http://en.wikipedia.org/wiki/Gliese_682">Wikipedia</a></li></ul>'+
