@@ -1,0 +1,8 @@
+<h1>my locations</h1>
+
+<% if session[:user_id] %>
+<% @this_user = User.find(session[:user_id]) %>
+
+<% else %>
+<p> Please sign in to see the locations that you've visited.</p>
+<% end %>

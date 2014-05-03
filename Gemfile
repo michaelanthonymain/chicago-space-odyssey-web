@@ -30,6 +30,8 @@ group :test do
   gem "guard-rspec"
   gem "rb-fsevent"
   gem "jasmine"
+  gem "shoulda-matchers"
+  gem "database_cleaner"
 end
 
 # Use ActiveModel has_secure_password

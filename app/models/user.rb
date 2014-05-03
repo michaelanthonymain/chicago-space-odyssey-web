@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   has_many :visits
+  has_many :collections
+  has_many :locations, through: :visits
 
   def self.create_with_omniauth(auth)
     create! do |user|
