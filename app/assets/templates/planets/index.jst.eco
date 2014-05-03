@@ -1,8 +1,0 @@
-<ul class='planets-sidebar'>
-<% for planet in @planets.models: %>
-    <li class='planets-sidebar-items'>
-        <p class='planet-name'><%= planet.get('name') %></p>
-        <img id='system-image' src="http://placekitten.com/50/50">
-    </li>
-<% end %>
-</ul>
