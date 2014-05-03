@@ -55,3 +55,4 @@ end
 10.times do
   Collection.create(text: "Back in my day, all we listened to was carnival music!", user_id: users.sample, location_id: locations.sample)
 end
+
