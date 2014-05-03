@@ -1,6 +1,6 @@
-class CreateCaches < ActiveRecord::Migration
+class CreateCollections < ActiveRecord::Migration
   def change
-    create_table :caches do |t|
+    create_table :collections do |t|
       t.text       :text
       t.string     :image_path
       t.belongs_to :location

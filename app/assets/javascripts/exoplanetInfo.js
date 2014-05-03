@@ -36,8 +36,6 @@ var exoPlanets = [
     '</ul>'+
     '</div></div>'
   ],
-  // Navy Pier Children's Museum
-  // ['Tau Ceti e', 41.891105, -87.609497, 3, 'stuff'], Can't do because it's the same system as below
   // Navy Pier Ferris Wheel
   ['Tau Ceti', 41.891712, -87.607244, 2,
     '<div id="content">'+
@@ -168,7 +166,7 @@ var exoPlanets = [
     "<p>HD 85512 has one planet, HD 85512 b, that is about 3 times the mass of Earth. It also lies within "+
     "HD 85512's habitable zone. Scientists believe has the potential to be cool enough to have liquid water "+
     "on its surface, making it potentially habitable.</p>"+
-    "<p>This marker is at the University of Chicago's Regenstein Library, which is on the site of the first "+
+    "<p>This marker is at the University of Chicago's Regenstein Library, which is on the site of Chicago Pile-1, the first "+
     "sustained nuclear reaction on Earth. It is about 5.15 miles"+
     ' from the Adler Planetarium.</p>'+
     '<p>Resources:</p>'+
