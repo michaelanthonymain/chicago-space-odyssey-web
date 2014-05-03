@@ -59,7 +59,25 @@ var exoPlanets = [
     '</div></div>'
   ],
   // Sears Tower
-  ['GJ 180', 41.878900, -87.635772, 6, 'stuff'],
+  ['GJ 180', 41.878900, -87.635772, 6,
+    '<div id="content">'+
+    '<div id="siteNotice"></div>'+
+    '<h1 id="firstHeading" class="firstHeading">GJ 180</h1>'+
+    '<div id="bodyContent">'+
+    '<p><b>GJ 180</b> is a star in the constellation Cetus. It is very similar to our Sun, except it is about '+
+    "75% of the Sun's mass. At about 12 light years away, it is one of the closest stars to the Sun. Because it is "+
+    "12 light years away, light that is reaching Tau Ceti right now left the Earth in the year "+ ((new Date().getFullYear())-12) +".</p>"+
+    "<p>Tau Ceti has 5 confirmed planets: Tau Ceti b, c, d, e, and f. Two of those planets, e and f, are within Tau Ceti's "+
+    "habitable zone, which makes them prime targets for the search for extra-terrestrial life.</p>"+
+    "<p>The marker is at Navy Pier's Ferris Wheel. It is about 1.7 miles"+
+    ' from the Adler Planetarium.</p>'+
+    '<p>Resources:</p>'+
+    '<ul>'+
+    "<li>Tau Ceti on <a href='http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Tau_Ceti.html'>Princeton University's Website</a></li>"+
+    '<li>Tau Ceti on <a href="http://en.wikipedia.org/wiki/Tau_Ceti">Wikipedia</a></li>'+
+    '</ul>'+
+    '</div></div>'
+  ],
   // Merch Mart
   ['Gliese 876', 41.888477, -87.635407, 5, 'stuff'],
   // This is the one that's at DBC
