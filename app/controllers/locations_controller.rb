@@ -5,6 +5,6 @@ class LocationsController < ApplicationController
     @loc = Location.find(params[:id])
     @system = @loc.system
     @location = {:location => @loc, :system => @system}
-    respond_with @location
+    render json: @location
   end
 end
