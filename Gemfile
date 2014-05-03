@@ -34,6 +34,8 @@ group :test do
   gem "database_cleaner"
 end
 
+gem "faker"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

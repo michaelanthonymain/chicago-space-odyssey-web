@@ -1,8 +1,26 @@
-<h1>my locations</h1>
-
 <% if session[:user_id] %>
-<% @this_user = User.find(session[:user_id]) %>
+    <% @this_user = User.find(session[:user_id]) %>
+
+        <% if @this_user.locations.empty? %>
+            <p> Looks like you haven't visited any locations yet...</p>
+        <% else %>
+          <div class="all-content">
+              <div class="sidebar">
+              <ul class="list">
+                  <% @this_user.locations.each do |location| %>
+                      <li class="list-item" planet-id="<%=location.system.id%>"><%= location.name %></li>
+                  <% end %>
+              </ul>
+              </div>
+
+              <div class="main-content">
+                  <div class="planet-info">
+                      <h1 class="header">BUTTS</h1>
+                  </div>
+              </div>
+          </div>
+        <% end %>
 
 <% else %>
-<p> Please sign in to see the locations that you've visited.</p>
+    <p> Please sign in to see the locations that you've visited.</p>
 <% end %>
