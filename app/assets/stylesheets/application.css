@@ -19,24 +19,25 @@
 header {
   background: url(banner.jpg);
   background-position:center;
-  font-family: sans-serif;
-  z-index: 99999999999;
   box-shadow: 0 0 10px black;
+  font-family: sans-serif;
   height:50px;
+  position: relative;
+  z-index: 10;
 }
 
 .hashtag {
-  line-height: 50px;
   color: white;
   float: right;
+  line-height: 50px;
   margin-right: 10px;
 }
 
 .nav a, .sign-in-out a {
-  line-height: 50px;
-  float: right;
-  margin-right: 10px;
   color: white;
+  float: right;
+  line-height: 50px;
+  margin-right: 10px;
   vertical-align: middle;
 }
 
