@@ -30,7 +30,11 @@ group :test do
   gem "guard-rspec"
   gem "rb-fsevent"
   gem "jasmine"
+  gem "shoulda-matchers"
+  gem "database_cleaner"
 end
+
+gem "faker"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

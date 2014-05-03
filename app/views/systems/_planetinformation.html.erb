@@ -1,0 +1,9 @@
+<h1 class='header'><%=@system.name %></h1>
+<p><%= @system.description%></p>
+<h2 class='header'>Cache</h2>
+<ul>
+  <% @this_location = @system.location %>
+  <% @this_location.collections.each do |cache| %>
+  <li><%= cache.text %></li>
+  <% end %>
+</ul>
