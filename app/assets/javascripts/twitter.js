@@ -1,3 +1,7 @@
+$(document).ready(function(event) {
+  var hashtag = new TwitterHashtag;
+});
+
 function TwitterHashtag() {
   this.$el = $('.hashtag')
   this.showTwitterFeed();
@@ -21,7 +25,3 @@ TwitterHashtag.prototype.hideTwitterFeed = function() {
       }
     });
 }
-
-$(document).ready(function(event) {
-  var hashtag = new TwitterHashtag;
-})
