@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  background: #e8e8e8;
 }
 
 .all-content {
@@ -11,8 +12,7 @@ html, body {
   height: 100%;
   max-width: 250px;
   min-width: 120px;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  border-right: 0.5px solid #474646;
   float: left;
 }
 
@@ -33,6 +33,17 @@ html, body {
 }
 
 .list-item {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #474646;
+  padding: 5px 10px;
   height: 50px;
+  font-family: Helvetica;
+  color: #9c9c9c;
+}
+
+.background {
+  background: #262626;
+}
+
+.highlighter {
+  background: #e8e8e8;
 }
