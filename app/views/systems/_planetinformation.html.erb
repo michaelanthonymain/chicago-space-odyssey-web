@@ -4,7 +4,11 @@
 <ul class='collections'>
   <li>Cache</li>
   <% @this_location = @system.location %>
-  <% @this_location.collections.each do |cache| %>
-  <li><%= cache.text %></li>
+  <% if @this_location.collections.empty? %>
+      <li>No one has added to this cache, yet!</li>
+  <% else %>
+      <% @this_location.collections.each do |cache| %>
+          <li><%= cache.text %></li>
+      <% end %>
   <% end %>
 </ul>
