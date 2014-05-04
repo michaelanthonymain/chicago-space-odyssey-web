@@ -33,6 +33,11 @@ header {
   margin-right: 10px;
 }
 
+.hashtag a{
+  color: white;
+  /*text-decoration: none;*/
+}
+
 .nav a, .sign-in-out a {
   color: white;
   float: right;
