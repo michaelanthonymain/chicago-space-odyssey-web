@@ -10,7 +10,6 @@ $(function() {
     }
     var target = e.target;
     if (!$(target).is("#twitter-popup") && !$(target).is('.hashtag a')) {
-      console.log("popup")
       $("#twitter-popup").fadeOut(150);
     };
   });
