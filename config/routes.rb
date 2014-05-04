@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get "/signout" => "sessions#destroy", as: :signout
 
   # Locations
+  get "/locations/systems" => 'locations#systems'
   resources :locations
 end
