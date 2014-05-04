@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # System show
   get "systems/show/:id" => "systems#show"
+  get "/systems/all" => 'systems#all'
 
   # Users
   get "/show" => "users#show"
@@ -14,6 +15,5 @@ Rails.application.routes.draw do
   get "/signout" => "sessions#destroy", as: :signout
 
   # Locations
-  get "/locations/systems" => 'locations#systems'
   resources :locations
 end
