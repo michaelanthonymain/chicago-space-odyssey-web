@@ -8,7 +8,7 @@
               <div class="sidebar">
               <ul class="list">
                   <% @this_user.locations.each do |location| %>
-                      <li class="list-item" planet-id="<%=location.system.id%>"><%= location.name %></li>
+                      <li class="list-item background" planet-id="<%=location.system.id%>"><%= location.name %></li>
                   <% end %>
               </ul>
               </div>
