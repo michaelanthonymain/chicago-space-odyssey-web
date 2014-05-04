@@ -14,9 +14,9 @@ function ListItem() {
 
 ListItem.prototype.changeColors = function( self ) {
     clickTarget = event.currentTarget;
-    self.removeHighlighterClass(clickTarget)
-    self.addBackgroundClass(clickTarget);
-    self.removeBackgroundClass(clickTarget);
+    self.removeHighlighterClass();
+    self.addBackgroundClass();
+    self.removeBackgroundClass();
     self.addHighlighterClass();
 }
 
