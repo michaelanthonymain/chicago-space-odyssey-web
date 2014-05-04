@@ -1,7 +1,8 @@
-<h1 class='header'><%=@system.name %></h1>
+<h1 class='pi-header'><%=@system.name %></h1>
 <p><%= @system.description%></p>
-<h2 class='header'>Cache</h2>
-<ul>
+<!-- <h2 class='pi-header small-header'>Cache</h2> -->
+<ul class='collections'>
+  <li>Cache</li>
   <% @this_location = @system.location %>
   <% @this_location.collections.each do |cache| %>
   <li><%= cache.text %></li>
