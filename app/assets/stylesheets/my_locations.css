@@ -13,11 +13,14 @@ html, body {
   max-width: 250px;
   min-width: 120px;
   border-right: 0.5px solid #474646;
+  background: #262626;
   float: left;
 }
 
 .main-content {
-  width: 74%;
+  width: 60%;
+  margin-left: 10%;
+  font-family: Helvetica;
   float: left;
 }
 

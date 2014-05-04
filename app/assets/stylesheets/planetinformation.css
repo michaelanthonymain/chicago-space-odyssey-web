@@ -8,10 +8,11 @@
 }
 
 .collections {
-  width: 50%;
-  max-width: 300px;
-  margin: 10px auto;
+  width: 100%;
+  /*max-width: 300px;*/
+  margin: 50px auto;
   list-style: none;
+  padding: 0;
 }
 
 .collections > li {
@@ -20,7 +21,7 @@
   padding: 10px 10px;
   font-family: Helvetica;
   font-size: 80%;
-  max-width: 300px;
+  /*max-width: 300px;*/
   min-width: 150px;
   background: white;
 }
