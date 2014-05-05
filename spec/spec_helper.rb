@@ -6,6 +6,25 @@ require 'rspec/autorun'
 require 'capybara/rspec'
 require 'shoulda/matchers'
 
+OmniAuth.config.test_mode = true
+omniauth_hash = {'provider' => 'twitter',
+                              'uid' => '12345',
+                              'info' =>
+                                {
+                                  'nickname' => 'manthonymain',
+                                  'name' => 'Michael Main',
+                                  'location' => 'Chicago, IL',
+                                  'image' => 'http://placekitten.com/200/300'
+                                },
+                              'credentials' =>
+                                {
+                                  'token' => 'umad',
+                                  'secret' => 'bro'
+                                }
+
+}
+OmniAuth.config.add_mock(:twitter, omniauth_hash)
+
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
