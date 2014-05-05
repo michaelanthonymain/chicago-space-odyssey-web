@@ -1,0 +1,52 @@
+$light-grey: #e8e8e8
+$dark-grey: #474646
+$darker-grey: #262626
+$hel: Helvetica
+@mixin h100
+  height: 100%
+
+html,
+body
+  @include h100
+  background: $light-grey
+
+.all-content
+  @include h100
+
+.sidebar
+  width: 24%
+  @include h100
+  max-width: 250px
+  min-width: 120px
+  border-right: 0.5px solid $dark-grey
+  background: $darker-grey
+  float: left
+
+.main-content
+  width: 60%
+  margin-left: 10%
+  font-family: $hel
+  float: left
+
+.header
+  text-align: center
+
+.list
+  width: 100%
+  list-style: none
+  padding: 0
+  margin: 0
+
+.list-item
+  border-bottom: 1px solid $darker-grey
+  padding: 5px 10px
+  height: 50px
+  font-family: $hel
+  color: #9c9c9c
+
+.background
+  background: $darker-grey
+
+.highlighter
+  background: $light-grey
+  color: black

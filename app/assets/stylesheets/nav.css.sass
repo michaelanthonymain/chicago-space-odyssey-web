@@ -1,0 +1,38 @@
+@mixin links
+  color: white
+  float: right
+  line-height: 50px
+  margin-right: 10px
+  vertical-align: middle
+
+header
+  background: url(banner.jpg)
+  background-position: center
+  box-shadow: 0 0 10px black
+  font-family: sans-serif
+  height: 50px
+  position: relative
+  z-index: 10
+
+.hashtag
+  color: white
+  float: right
+  line-height: 50px
+  margin-right: 10px
+
+  a
+    color: white
+
+.nav
+  float: left
+  margin-left: 10px
+
+  a
+    @include links
+
+.sign-in-out
+  a
+    @include links
+
+  img
+    vertical-align: middle

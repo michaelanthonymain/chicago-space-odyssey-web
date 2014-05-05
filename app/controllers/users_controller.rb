@@ -8,8 +8,7 @@ class UsersController < ApplicationController
   end
 
   def locations
-    # # Once we start sending twitter UIDs to identify users, we need to change this
-    @locs = User.find_by(id: params[:uid]).locations
+    @locs = User.find_by(uid: params[:uid]).locations
     @response = {}
     @locs.each do |loc|
       @response[loc.id.to_s] = loc.name
