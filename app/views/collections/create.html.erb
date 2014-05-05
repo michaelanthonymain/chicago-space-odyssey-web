@@ -1,2 +1,4 @@
-<%= @c.text %>
-<img src="<%= @c.image %>">
+<% @c.each do |c| %>
+  <%= c.text %>
+  <img src="data:<%= SecureRandom.hex %>/png;base64,<%= c.image %>">
+<% end %>

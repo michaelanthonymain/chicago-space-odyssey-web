@@ -2,31 +2,15 @@ class CollectionsController < ApplicationController
   # skip_before_filter :verify_authenticity_token
 
   def create
-
-    path = "collections/uploads/#{SecureRandom.hex}.png"
-    unpack = params[:image].unpack("m0")
-
-
-    File.open("#{path}", "wb") do |f|
-      f.write(unpack.first)
-    end
-
-    @c = Collection.new(text:params[:text], image: path)
+    # Still need to add user_id and location_id, but it works for a start
+    @c = Collection.new(text:params[:text], image: params[:image])
     @c.save!
   end
 
-  def upload
-
-  end
-
   def show
-    @c = Collection.find(params[:id])
+    @c = []
+    @c << Collection.last
+    @c << Collection.find(Collection.last.id - 1)
     render :create
-  end
-
-  private
-
-  def collection_params
-    params.require(:collection).permit!
   end
 end
