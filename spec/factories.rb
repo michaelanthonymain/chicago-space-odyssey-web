@@ -13,5 +13,10 @@ FactoryGirl.define do
     distance 4
   end
 
+  factory :location do
+    system
+    name "Test Location"
+  end
+
 
 end
