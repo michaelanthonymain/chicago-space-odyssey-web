@@ -1,3 +1,19 @@
+GIT
+  remote: git://github.com/pivotal/jasmine-gem.git
+  revision: f7694f8d2978deb5c18ddd4935426afc72022b9e
+  specs:
+    jasmine (2.0.1)
+      jasmine-core (~> 2.0.0)
+      phantomjs
+      rack (>= 1.2.1)
+      rake
+
+GIT
+  remote: git://github.com/pivotal/jasmine.git
+  revision: 00c8e372576438243a8f977b8bc7b81f04389dd6
+  specs:
+    jasmine-core (2.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -82,12 +98,6 @@ GEM
       http_parser.rb
     http_parser.rb (0.6.0)
     i18n (0.6.9)
-    jasmine (2.0.1)
-      jasmine-core (~> 2.0.0)
-      phantomjs
-      rack (>= 1.2.1)
-      rake
-    jasmine-core (2.0.0)
     jbuilder (2.0.6)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -244,7 +254,8 @@ DEPENDENCIES
   factory_girl_rails
   faker
   guard-rspec
-  jasmine
+  jasmine!
+  jasmine-core!
   jbuilder (~> 2.0)
   jquery-rails
   omniauth-twitter
