@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # Users
   get "/show" => "users#show"
   get '/users/:uid/locations' => "users#locations"
+  post '/users/mobile' => 'users#mobile'
 
   # Sessions
   get "/auth/twitter/callback" => "sessions#create"
