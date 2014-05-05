@@ -17,4 +17,9 @@ Rails.application.routes.draw do
   # Locations
   get '/locations/:id/collections' => 'locations#collections'
   get '/locations/:id' => 'locations#system'
+
+  # Collections
+  get 'collections/:id' => 'collections#show'
+  post '/collections/create' => "collections#create", as: 'collections'
+  get '/collections/upload' => 'collections#upload'
 end
