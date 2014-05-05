@@ -10,6 +10,7 @@ function TwitterHashtag() {
 
 TwitterHashtag.prototype.showTwitterFeed = function() {
     this.$el.click(function(event) {
+      event.preventDefault();
       $("#twitter-popup").fadeToggle(150);
     });
 }
