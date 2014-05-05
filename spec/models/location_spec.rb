@@ -11,4 +11,5 @@ describe Location do
   #Association Tests
   it { should have_one(:system) }
   it { should have_many(:visits) }
+  it { should have_many(:collections) }
 end

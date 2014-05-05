@@ -1,8 +1,8 @@
 <h1 class='pi-header'><%=@system.name %></h1>
+<h3 class='pi-header'><%=@system.distance %> Light Years Away</h3>
 <p><%= @system.description%></p>
-<!-- <h2 class='pi-header small-header'>Cache</h2> -->
 <ul class='collections'>
-  <li>Cache</li>
+  <li>What were you doing <%=@system.distance %> years ago?</li>
   <% @this_location = @system.location %>
   <% if @this_location.collections.empty? %>
       <li>No one has added to this cache, yet!</li>

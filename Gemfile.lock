@@ -1,3 +1,19 @@
+GIT
+  remote: git://github.com/pivotal/jasmine-gem.git
+  revision: f7694f8d2978deb5c18ddd4935426afc72022b9e
+  specs:
+    jasmine (2.0.1)
+      jasmine-core (~> 2.0.0)
+      phantomjs
+      rack (>= 1.2.1)
+      rake
+
+GIT
+  remote: git://github.com/pivotal/jasmine.git
+  revision: 00c8e372576438243a8f977b8bc7b81f04389dd6
+  specs:
+    jasmine-core (2.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -42,6 +58,7 @@ GEM
     celluloid-io (0.15.0)
       celluloid (>= 0.15.0)
       nio4r (>= 0.5.0)
+    cliver (0.3.2)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -81,12 +98,6 @@ GEM
       http_parser.rb
     http_parser.rb (0.6.0)
     i18n (0.6.9)
-    jasmine (2.0.1)
-      jasmine-core (~> 2.0.0)
-      phantomjs
-      rack (>= 1.2.1)
-      rake
-    jasmine-core (2.0.0)
     jbuilder (2.0.6)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -127,6 +138,11 @@ GEM
       omniauth-oauth (~> 1.0)
     pg (0.17.1)
     phantomjs (1.9.7.0)
+    poltergeist (1.5.0)
+      capybara (~> 2.1)
+      cliver (~> 0.3.1)
+      multi_json (~> 1.0)
+      websocket-driver (>= 0.2.0)
     polyglot (0.3.4)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -224,6 +240,7 @@ GEM
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    websocket-driver (0.3.3)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -237,11 +254,13 @@ DEPENDENCIES
   factory_girl_rails
   faker
   guard-rspec
-  jasmine
+  jasmine!
+  jasmine-core!
   jbuilder (~> 2.0)
   jquery-rails
   omniauth-twitter
   pg
+  poltergeist
   rack-cors
   rails (= 4.1.0)
   rails_12factor

@@ -11,6 +11,7 @@
 #   - dist/**/*.js
 #
 src_files:
+  - "twitter.js"
   - assets/application.js
 
 # stylesheets
@@ -51,7 +52,8 @@ helpers:
 #   - **/*[sS]pec.js
 #
 spec_files:
-  - '**/*[sS]pec.js'
+  - 'twitter_spec.js.coffee'
+  - '**/*[Ss]pec.{js,coffee}'
 
 # src_dir
 #
