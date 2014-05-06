@@ -7,19 +7,17 @@ class UsersController < ApplicationController
   def show
   end
 
-  def locations
-    @locs = User.find_by(uid: params[:uid]).locations
-    @response = {}
-    @locs.each do |loc|
-      @response[loc.id.to_s] = loc.name
-    end
-    respond_with @response
-  end
-
   def mobile
-    @user = User.create_or_find_by(uid: params[:user_id])
-    # @user = User.create!(uid: params[:user_id].to_i) if !@user && params[:user_id]
-    @loc = Location.find(params[:location_id])
-    @user.locations << @loc if !@user.locations.include?(@loc)
+    @user = User.where(uid: params[:uid]).first
+    @user = User.create!(uid: params[:user_id].to_i) if !@user
+    if !@user.locations.include?(Location.find(params[:location_id]))
+      @user.locations << Location.find(params[:location_id])
+    end
+    @locs = @user.locations
+    @response = @locs.inject({}) {|resp,loc|
+      resp[loc.id.to_s] = loc.name
+      resp
+    }
+    respond_with @response
   end
 end
