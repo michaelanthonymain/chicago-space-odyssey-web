@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - "2.0.0"
+# uncomment this line if your project needs to run something other than `rake`:
+before_script:
+  - bundle exec rake db:create db:migrate
+  
+script: bundle exec rake spec

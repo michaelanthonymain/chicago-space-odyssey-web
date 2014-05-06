@@ -31,6 +31,7 @@ group :test, :development do
 end
 
 group :test do
+  gem "rake"
   gem "factory_girl_rails"
   gem "capybara"
   gem "poltergeist"
