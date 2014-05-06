@@ -8,6 +8,8 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'capybara/rspec'
 require 'shoulda/matchers'
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
 
 OmniAuth.config.test_mode = true
 omniauth_hash = {'provider' => 'twitter',
