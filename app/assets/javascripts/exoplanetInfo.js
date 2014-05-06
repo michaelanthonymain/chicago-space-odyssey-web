@@ -1,3 +1,5 @@
+// erb for js
+
 var exoPlanets = [
   // Planetarium
   ["Our Solar System", 41.866333, -87.606783, 7,
