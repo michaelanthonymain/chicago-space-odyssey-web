@@ -33,3 +33,6 @@ class ListItem
 $ ->
   item = new ListItem
   clickTarget = ''
+
+# Test class additions and removals, spy on ajax to see that call is being made
+# Test that constructor sets variables correctly
