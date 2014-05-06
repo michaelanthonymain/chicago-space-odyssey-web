@@ -26,5 +26,9 @@ FactoryGirl.define do
     name "Test Location"
   end
 
+  factory :collection do
+    text "This is some collection shit, ya dig?"
+  end
+
 
 end

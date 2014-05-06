@@ -2,7 +2,6 @@ class CollectionsController < ApplicationController
   # skip_before_filter :verify_authenticity_token
 
   def create
-    # Still need to add user_id and location_id, but it works for a start
     name = SecureRandom.hex + ".png"
     dir = "collections"
     unpack = params[:image].unpack("m0")
