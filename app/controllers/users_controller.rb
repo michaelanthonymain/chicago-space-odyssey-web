@@ -8,8 +8,8 @@ class UsersController < ApplicationController
   end
 
   def mobile
-    @user = User.where(uid: params[:uid]).first
-    @user = User.create!(uid: params[:uid].to_i) if !@user
+    @user = User.find_by(uid: params[:user_id].to_i)
+    @user = User.create!(uid: params[:user_id].to_i) if !@user
     if !@user.locations.include?(Location.find(params[:location_id]))
       @user.locations << Location.find(params[:location_id])
     end
