@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   # Users
   get "/show" => "users#show"
-  get '/users/:uid/locations' => "users#locations"
+  get '/users/:uid/locations' => "users#locations", defaults: {:format => :json}
   post '/users/mobile' => 'users#mobile'
 
   # Sessions
@@ -16,8 +16,8 @@ Rails.application.routes.draw do
   get "/signout" => "sessions#destroy", as: :signout
 
   # Locations
-  get '/locations/:id/collections' => 'locations#collections'
-  get '/locations/:id' => 'locations#system'
+  get '/locations/:id' => 'locations#system', defaults: {:format => :json}
+  get '/locations/:id/collections' => 'locations#collections', defaults: {:format => :json}
 
   # Collections
   get 'collections/:id' => 'collections#show'
