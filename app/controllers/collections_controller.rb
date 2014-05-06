@@ -7,9 +7,11 @@ class CollectionsController < ApplicationController
     dir = "collections"
     unpack = params[:image].unpack("m0")
     path = File.join("public",dir, name)
+
     File.open(path, "wb") do |f|
       f.write(unpack.first)
     end
+
     user = User.find_by(uid: params[:user_id].to_i)
     @c = Collection.new(text: params[:text], image: name, location_id: params[:location_id].to_i, user: user)
     @c.save!
