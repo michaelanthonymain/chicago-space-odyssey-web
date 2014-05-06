@@ -18,6 +18,6 @@ class UsersController < ApplicationController
       resp[loc.id.to_s] = loc.name
       resp
     }
-    respond_with @response
+    render json: @response
   end
 end
