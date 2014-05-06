@@ -17,8 +17,9 @@ class UsersController < ApplicationController
   end
 
   def mobile
-    @user = User.where(uid: params[:user_id]).first
-    @user = User.create!(uid: params[:user_id].to_i) if !@user && params[:user_id]
-    @user.locations << Location.find(params[:location_id].to_i) if params[:location_id]
+    @user = User.create_or_find_by(uid: params[:user_id])
+    # @user = User.create!(uid: params[:user_id].to_i) if !@user && params[:user_id]
+    @loc = Location.find(params[:location_id])
+    @user.locations << @loc if !@user.locations.include?(@loc)
   end
 end
