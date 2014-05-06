@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  # respond_to :json
+  respond_to :json
 
   def index
   end
@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     @locs.each do |loc|
       @response[loc.id.to_s] = loc.name
     end
-    render :json => @response
+    respond_with @response
   end
 
   def mobile
