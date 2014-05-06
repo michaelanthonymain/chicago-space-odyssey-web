@@ -15,4 +15,15 @@ class User < ActiveRecord::Base
       user.secret = auth['credentials']['secret']
     end
   end
+
+  def update_info(auth)
+    self.provider = auth['provider']
+    self.name = auth['info']['name']
+    self.username = auth['info']['nickname']
+    self.image_string = auth['info']['image']
+    self.location = auth['info']['location']
+    self.token = auth['credentials']['token']
+    self.secret = auth['credentials']['secret']
+    self.save!
+  end
 end

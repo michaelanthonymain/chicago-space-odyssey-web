@@ -15,4 +15,10 @@ class UsersController < ApplicationController
     end
     render :json => @response
   end
+
+  def mobile
+    @user = User.where(uid: params[:user_id]).first
+    @user = User.create!(uid: params[:user_id].to_i) if !@user && params[:user_id]
+    @user.locations << Location.find(params[:location_id].to_i) if params[:location_id]
+  end
 end
