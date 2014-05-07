@@ -65,3 +65,7 @@ gem 'rack-cors', :require => 'rack/cors'
 
 # For Heroku
 gem 'rails_12factor', group: :production
+
+# For S3
+gem 'paperclip'
+gem 'aws-sdk'
