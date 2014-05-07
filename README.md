@@ -5,7 +5,7 @@ Chicago Space Odyssey (web)
 ### The Team
 ==================
 ![The Team](http://i.imgur.com/8jovpJx.jpg)
-The team that built Chicago Space Odyssey is comprised of five aspiring developers at Dev BootCamp Chicago: Javad Afshar, Amelia Padua, Ryan Verhey, Jaime Schubert, and Michael Main.
+The team that built Chicago Space Odyssey is comprised of five aspiring developers at Dev BootCamp Chicago: Jaime Schubert, Amelia Padua, Michael Main, Javad Afshar, and Ryan Verhey.
 
 ### The Project
 ==================
