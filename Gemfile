@@ -26,18 +26,18 @@ gem 'spring',        group: :development
 
 group :test, :development do
   gem "rspec-rails"
+  gem "capybara"
   gem "jasmine-core", github: 'pivotal/jasmine'
   gem "jasmine", github: 'pivotal/jasmine-gem'
+  gem "database_cleaner"
 end
 
 group :test do
   gem "factory_girl_rails"
-  gem "capybara"
   gem "poltergeist"
   gem "guard-rspec"
   gem "rb-fsevent"
   gem "shoulda-matchers"
-  gem "database_cleaner"
 end
 
 gem "faker"
