@@ -10,8 +10,9 @@ class UsersController < ApplicationController
   def mobile
     @user = User.find_by(uid: params[:user_id].to_i)
     @user = User.create!(uid: params[:user_id].to_i) if !@user
-    if !@user.locations.include?(Location.find(params[:location_id]))
-      @user.locations << Location.find(params[:location_id])
+    @loc = Location.find_by(id: params[:location_id])
+    if !@user.locations.include?(@loc) && @loc
+      @user.locations << @loc
     end
     @locs = @user.locations
     @response = @locs.inject({}) {|resp,loc|
