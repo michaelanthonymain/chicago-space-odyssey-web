@@ -8,7 +8,11 @@
       <li>No one has added to this cache, yet!</li>
   <% else %>
       <% @this_location.collections.each do |cache| %>
-          <li><%= cache.text %></li>
+          <li><%= cache.text %>
+            <% if cache.image %>
+              <br><img src='collections/<%= cache.image %>' />
+            <% end %>
+          </li>
       <% end %>
   <% end %>
 </ul>
