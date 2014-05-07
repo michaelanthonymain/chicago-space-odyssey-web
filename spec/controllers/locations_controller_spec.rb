@@ -11,17 +11,17 @@ describe LocationsController do
     end
 
     it "should find a location's system" do
-      get :system, id: location.id
+      get :system, id: location.id, format: :json
       expect(assigns(:system)).to eq(location.system)
     end
 
     it "should build a location hash" do
-      get :system, id: location.id
+      get :system, id: location.id, format: :json
       expect(assigns(:location)).to eq({location: location, system: location.system})
     end
 
     it "should render json" do
-      get :system, id: location.id
+      get :system, id: location.id, format: :json
       response.body.should == {location: location, system: location.system}.to_json
     end
   end
