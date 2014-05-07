@@ -1,19 +1,16 @@
 Chicago Space Odyssey (web)
 ==================
-[![Build Status](https://travis-ci.org/michaelanthonymain/chicago-space-odyssey-web.svg?branch=master)](https://travis-ci.org/michaelanthonymain/chicago-space-odyssey-web)
+[![Build Status](https://travis-ci.org/michaelanthonymain/chicago-space-odyssey-web.svg?branch=master)](https://travis-ci.org/michaelanthonymain/chicago-space-odyssey-web) [![Coverage Status](https://coveralls.io/repos/michaelanthonymain/chicago-space-odyssey-web/badge.png)](https://coveralls.io/r/michaelanthonymain/chicago-space-odyssey-web)
 
-[![Coverage Status](https://coveralls.io/repos/michaelanthonymain/chicago-space-odyssey-web/badge.png)](https://coveralls.io/r/michaelanthonymain/chicago-space-odyssey-web)
-
-The Team
+### The Team
 ==================
 ![The Team](http://i.imgur.com/8jovpJx.jpg)
 The team that built Chicago Space Odyssey is comprised of five aspiring developers at Dev BootCamp Chicago: Javad Afshar, Amelia Padua, Ryan Verhey, Jaime Schubert, and Michael Main.
 
-The Project
+### The Project
 ==================
-CSO is a way for people in the city of Chicago to learn more about the city while also exploring known exoplanets.
+CSO is a way for people to explore known exoplanets while visiting popular locations around the city of Chicago. The project uses a lightyears to miles scale to plot exoplanets at accurate scale distances with the Adler Planetarium representing our solar system. Use our web and mobile ([CSO Mobile](https://github.com/mjafshar/tosche-station-mobile "CSO Mobile")) apps to plan your adventure, learn about exoplanets, and view and contribute to digital geocaches. Explore our galaxy while you explore our city. 
 
-
-Acknowledgements
+### Acknowledgements
 ==================
 This project would not have been possible without the support of Zooniverse, the Adler Planetarium, and the guidance of Stuart Lynn. Thank you for everything.
