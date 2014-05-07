@@ -8,16 +8,15 @@ Rails.application.routes.draw do
 
   # Users
   get "/show" => "users#show"
-  get '/users/:uid/locations' => "users#locations"
-  post '/users/mobile' => 'users#mobile'
+  post '/users/mobile' => 'users#mobile', defaults: {:format => :json}
 
   # Sessions
   get "/auth/twitter/callback" => "sessions#create"
   get "/signout" => "sessions#destroy", as: :signout
 
   # Locations
-  get '/locations/:id/collections' => 'locations#collections'
-  get '/locations/:id' => 'locations#system'
+  get '/locations/:id' => 'locations#system', defaults: {:format => :json}
+  get '/locations/:id/collections' => 'locations#collections', defaults: {:format => :json}
 
   # Collections
   get 'collections/:id' => 'collections#show'
