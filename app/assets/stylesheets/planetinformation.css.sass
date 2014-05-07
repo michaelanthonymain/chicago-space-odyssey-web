@@ -1,5 +1,7 @@
 $hel: Helvetica
 $light-grey: #e8e8e8
+@mixin h
+  height: 200px
 
 .pi-header
   text-align: center
@@ -28,8 +30,9 @@ $light-grey: #e8e8e8
       background: #f7f7f7
       text-align: center
       font-size: 90%
+    img
+      @include h
 
 .clone
-  position: absolute
-  // height: 100%
-  width: 100px
+  position: fixed
+  width: 20%
