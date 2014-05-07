@@ -17,36 +17,17 @@ describe UsersController do
     end
   end
 
-  context "#locations" do
-     it "should find the user's locations" do
-         get :locations, {uid: user.uid}
-         expect(assigns(:locs)).to eq(user.locations)
-     end
-
-     it "should set response equal to location names" do
-        get :locations, {uid: user.uid}
-        location = user.locations.first
-        expect(assigns(:response)).to eq( { "#{location.id}" => 'Test Location'} )
-     end
-
-     it "should render json" do
-         get :locations, {uid: user.uid}
-         location = user.locations.first
-         response.body.should == { "#{location.id}" => 'Test Location'}.to_json
-     end
-  end
-
   context "#mobile" do
       let(:location) { FactoryGirl.create(:location) }
 
       it "should find the user by params uid" do
-        post :mobile, {user_id: user.uid}
+        post :mobile, {user_id: user.uid, location_id: location.id}
         expect(assigns(:user)).to eq(user)
       end
 
       it "should create a user if none already exists" do
         expect {
-        post :mobile, {user_id: 14}
+        post :mobile, {user_id: 14, location_id: location.id}
         }.to change{ User.count }.by(1)
       end
 
