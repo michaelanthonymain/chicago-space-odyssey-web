@@ -297,7 +297,7 @@
         null,
         null,
         1,
-        6,
+        7,
         null,
         null
       ],
@@ -567,8 +567,6 @@
         1,
         1,
         1,
-        1,
-        1,
         null,
         null,
         1,
@@ -756,16 +754,8 @@
         1,
         1,
         null
-      ],
-      "/Users/Michael/Desktop/cso/app/controllers/welcome_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        null
       ]
     },
-    "timestamp": 1399566057
+    "timestamp": 1399566394
   }
 }

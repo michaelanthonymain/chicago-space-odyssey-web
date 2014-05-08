@@ -16,9 +16,7 @@ describe "Users" do
 
     it "should allow you to sign in with twitter", :js => true do
       visit map_path
-      save_screenshot('map-page.png')
       find("#twitter").click
-      save_screenshot('screen.png')
       page.should have_content("Sign Out")
     end
 
