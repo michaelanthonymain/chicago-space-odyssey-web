@@ -20,7 +20,7 @@ describe SessionsController do
 
     it "should redirect to the root path" do
       post :create, provider: :twitter
-      response.should redirect_to root_path
+      response.should redirect_to map_path
     end
   end
 

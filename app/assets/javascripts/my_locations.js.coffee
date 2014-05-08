@@ -26,6 +26,7 @@ class ListItem
     $ clickTarget
       .removeClass 'background'
   getPlanetData: (clickTarget) ->
+    $(".planet-id").empty()
     planetId = $ clickTarget
       .attr 'planet-id'
     $.get 'systems/show/'+ planetId, planetId, (response) ->

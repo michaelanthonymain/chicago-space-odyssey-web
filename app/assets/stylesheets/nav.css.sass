@@ -1,27 +1,34 @@
+$teal: #37E2AD
+
 @mixin links
   color: white
   float: right
-  line-height: 50px
+  line-height: 75px
   margin-right: 10px
   vertical-align: middle
+  text-decoration: none
 
 header
-  background: url(banner.jpg)
+  background-color: rgba(40, 40, 40, 0.7)
   background-position: center
+  border-bottom: 5px solid $teal
   box-shadow: 0 0 10px black
-  font-family: sans-serif
-  height: 50px
+  font-family: 'Raleway', Helvetica, sans-serif
+  height: 75px
   position: relative
   z-index: 10
 
 .hashtag
   color: white
   float: right
-  line-height: 50px
+  line-height: 75px
   margin-right: 10px
 
   a
     color: white
+    text-decoration: none
+    &:hover
+      color: $teal
 
 .nav
   float: left
@@ -29,10 +36,20 @@ header
 
   a
     @include links
+    &:hover
+      color: $teal
 
 .sign-in-out
   a
     @include links
+    &:hover
+      color: $teal
 
   img
     vertical-align: middle
+
+#logo 
+  position: absolute
+  left: 50%
+  margin-left: -25px
+  top: 10px

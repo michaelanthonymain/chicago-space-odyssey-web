@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Station</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
   <script type="text/javascript"
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP3d5y5j3FG1oDkruJkPU91bB_t8b0kj0&sensor=false">
     </script>
@@ -11,21 +12,6 @@
 </head>
 
 <body>
-  <header>
-    <div class="hashtag"><a href="#">#ChiSpaceOdyssey</a></div>
-    <% if logged_in? %>
-      <div class="sign-in-out"><%= link_to 'Sign Out', signout_path %></div>
-    <% else %>
-      <div class="sign-in-out">
-        <%= link_to '/auth/twitter' do %>
-          <%= image_tag 'sign-in-with-twitter-gray.png', id: 'twitter' %>
-        <% end %>
-      </div>
-    <% end %>
-    <div class="nav"><%= link_to "My Locations", show_path %>
-      <%= link_to "Home", root_path %>
-    </div>
-  </header>
 
 <%= yield %>
 
