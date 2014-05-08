@@ -1,27 +1,29 @@
 require 'spec_helper'
 
 describe "Users" do
-  describe "GET /index" do
+  describe "GET /map" do
     it "should have map content" do
-      visit root_path
+      visit map_path
       page.should have_css("#map-container")
       page.should have_css("#map")
     end
 
     it "should navigate to the show page" do
-      visit root_path
+      visit map_path
       click_link "My Locations"
       page.should have_content("Please sign in")
     end
 
     it "should allow you to sign in with twitter", :js => true do
-      visit root_path
+      visit map_path
+      save_screenshot('map-page.png')
       find("#twitter").click
+      save_screenshot('screen.png')
       page.should have_content("Sign Out")
     end
 
     it "should have a twitter feed", :js => true do
-      visit root_path
+      visit map_path
       click_link "#ChiSpaceOdyssey"
       page.should have_css('div#twitter-popup', :visible => true)
     end
