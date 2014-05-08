@@ -3,7 +3,9 @@
     <% @this_user = User.find(session[:user_id]) %>
 
         <% if @this_user.locations.empty? %>
-            <p> Looks like you haven't visited any locations yet...</p>
+          <div class='unavailable'>
+            <h2> Looks like you haven't visited any locations yet...</h2>
+          </div>
         <% else %>
           <div class="all-content">
               <div class="sidebar">
@@ -25,7 +27,9 @@
         <% end %>
 
 <% else %>
-    <p> Please sign in to see the locations that you've visited.</p>
+  <div class='unavailable'>
+    <h2> Please sign in to see the locations that you've visited.</h2>
+  </div>
 <% end %>
 
 <div id="twitter-popup" class="hidden">
