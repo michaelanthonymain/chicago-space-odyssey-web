@@ -34,7 +34,7 @@ describe LocationsController do
 
     it "should find collection by location" do
       get :collections, id: location.id, format: :json
-      expect(assigns(:colls)).to eq(location.collections)
+      expect(assigns(:colls)).to eq(location.collections.order("created_at DESC"))
     end
 
     it "should render json" do
