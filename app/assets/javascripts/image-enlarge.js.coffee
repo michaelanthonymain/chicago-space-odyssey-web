@@ -1,50 +1,41 @@
 dimPage = ->
   $ "html"
-    .prepend "<div class='hidden clone dimmer' />"
+    .prepend "<div class='hidden medium dimmer' />"
   $ ".dimmer"
     .fadeIn()
 
-imagePopUp = ($el, $img) ->
+setMediumPos = ($popup) ->
   $win = $(window)
-  $elBig = $el.clone().css "z-index", 0
-    .css "height", "60%"
-  $elBig.appendTo $ "html"
+  $popup.css "top", (($win.height() - $popup.height()) / 2) + "px"
+    .css "left", (($win.width() - $popup.width()) / 2) + "px"
 
-  $el.css "top", $img.position().top
-    .css "left", $img.position().left
-    .css "width", $img.width()
-
-  newEdges =
-    top: ($win.height() - $elBig.height()) / 2
-    left: ($win.width() - $elBig.width()) / 2
-
+popup = ($img) ->
   $img.css "visibility", "hidden"
-
-  $el.animate
-    width: $elBig.width()
-    top: newEdges.top+"px"
-    left: newEdges.left+"px"
+  $img.siblings().children()
+    .fadeIn()
   dimPage()
 
-deleteClones = ->
-  $ ".clone"
+deletePopups = ->
+  $ ".medium"
     .fadeOut("fast", ->
-      @.remove()
+      $ ".medium"
+        .addClass "hidden"
+      $ ".dimmer"
+        .remove()
     )
   $ ".collections img"
     .css "visibility", "visible"
 
 enlarge = ($img) ->
-  deleteClones()
-  $clone = $img.clone()
-  $clone.addClass "clone"
-  $clone.prependTo $ "body"
-  imagePopUp($clone, $img)
+  deletePopups()
+  console.log($img.siblings().children())
+  popup($img)
+  setMediumPos($img.siblings().children())
 
 $ document
   .on "click", ".collections img", (event) ->
     enlarge($ @)
 
 $ document
-  .on "click", ".clone", (event) ->
-    deleteClones()
+  .on "click", ".medium", (event) ->
+    deletePopups()
