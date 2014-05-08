@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     user = User.find_by(uid: auth["uid"].to_i) || User.create_with_omniauth(auth)
     user.update_info(auth) if !user.username
     session[:user_id] = user.id
-    redirect_to root_path
+    redirect_to map_path
   end
 
   def destroy

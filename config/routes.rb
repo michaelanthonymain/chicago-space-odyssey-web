@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 
-  root to: 'users#index'
+  root to: 'welcome#index'
 
   # System show
   get "systems/show/:id" => "systems#show"
   get "/systems/all" => 'systems#all'
 
   # Users
+  get "/map" => "users#index"
   get "/show" => "users#show"
   post '/users/mobile' => 'users#mobile', defaults: {:format => :json}
 
