@@ -23,7 +23,7 @@ exosystems = [
   ['HD 85512', 36, "Chicago Pile-1", 41.792015, -87.599959, "HD 85512 is a star that's about 36 light years away from Earth in the constellation Vela. Because it is 36 light years away, That means that light that left Earth in the year #{t.year - 36} is just reaching HD 85512 now.\n\nHD 85512 has one planet, HD 85512 b, that is about 3 times the mass of Earth. It also lies within HD 85512's habitable zone. Scientists believe has the potential to be cool enough to have liquid water on its surface, making it potentially habitable.\n\nThis marker is at the University of Chicago's Regenstein Library, which is on the site of Chicago Pile-1, the first sustained nuclear reaction on Earth. It is about 5.15 miles from the Adler Planetarium."]
 ]
 
-# Creating Locations and Systems
+# Seeding Locations and Systems
 exosystems.each do |x|
   loc = Location.create!(name: x[2], latitude: x[3], longitude: x[4])
   system = System.create!(name: x[0], distance: x[1], description: x[5])
@@ -31,30 +31,48 @@ exosystems.each do |x|
 end
 
 #Create Users
-5.times do
-  User.create(name: Faker::Name.name, username: Faker::Team.creature)
+# 5.times do
+#   User.create(name: Faker::Name.name, username: Faker::Team.creature)
+# end
+
+# users = [1, 2, 3, 4, 5]
+# locations = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# #Create Visits
+# Visit.create(user_id: 1, location_id: 1)
+# Visit.create(user_id: 1, location_id: 2)
+# Visit.create(user_id: 1, location_id: 3)
+# Visit.create(user_id: 1, location_id: 4)
+# Visit.create(user_id: 1, location_id: 5)
+# Visit.create(user_id: 1, location_id: 6)
+# Visit.create(user_id: 1, location_id: 7)
+# Visit.create(user_id: 1, location_id: 8)
+# Visit.create(user_id: 1, location_id: 9)
+
+# 15.times do
+#   Visit.create(user_id: users.sample, location_id: locations.sample)
+# end
+
+# #Create Collections
+# 10.times do
+#   Collection.create(text: "Back in my day, all we listened to was carnival music!", user_id: users.sample, location_id: locations.sample)
+# end
+ryan = User.create(uid: 22741881)
+michael = User.create(uid: 1855826580)
+javad = User.create(uid: 14343779)
+javad.locations << Location.find(1)
+
+Location.all.each do |l|
+  ryan.locations << l
+  michael.locations << l
 end
 
-users = [1, 2, 3, 4, 5]
-locations = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-#Create Visits
-Visit.create(user_id: 1, location_id: 1)
-Visit.create(user_id: 1, location_id: 2)
-Visit.create(user_id: 1, location_id: 3)
-Visit.create(user_id: 1, location_id: 4)
-Visit.create(user_id: 1, location_id: 5)
-Visit.create(user_id: 1, location_id: 6)
-Visit.create(user_id: 1, location_id: 7)
-Visit.create(user_id: 1, location_id: 8)
-Visit.create(user_id: 1, location_id: 9)
-
-15.times do
-  Visit.create(user_id: users.sample, location_id: locations.sample)
+3.times do
+  javad.locations << Location.all.sample
 end
 
-#Create Collections
-10.times do
-  Collection.create(text: "Back in my day, all we listened to was carnival music!", user_id: users.sample, location_id: locations.sample)
-end
+# File.open("adler.png", "wb") do |f|
+#   Collection.create(user: javad, text: "Checking out the Adler!", image: f, location_id: 1)
+# end
 
+# Collection.create(user: User.find(3), text: "Checking out the Adler!", image: open('http://www.freestuffwire.com/media/free/21/Adler-Planetarium-Free-Days-2011-Chicago-Photo.png'), location_id: 1)
