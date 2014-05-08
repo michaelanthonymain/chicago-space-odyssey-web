@@ -1,3 +1,4 @@
+<%= render './nav' %>
 <% if session[:user_id] %>
     <% @this_user = User.find(session[:user_id]) %>
 
