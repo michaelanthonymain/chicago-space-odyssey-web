@@ -10,7 +10,8 @@
       <% @this_location.collections.each do |cache| %>
           <li><%= cache.text %>
             <% if cache.image %>
-              <br><%= image_tag cache.image.url(:thumb) %>
+              <br><%= image_tag cache.image.url(:thumb), class: "thumb" %>
+              <span><%= image_tag cache.image.url(:medium), class: "medium" %></span>
             <% end %>
           </li>
       <% end %>
