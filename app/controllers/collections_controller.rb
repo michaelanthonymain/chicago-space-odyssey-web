@@ -3,16 +3,15 @@ class CollectionsController < ApplicationController
 
   def create
     name = SecureRandom.hex + ".png"
-    dir = "collections"
     unpack = params[:image].unpack("m0")
-    path = File.join("public",dir, name)
+    @c = nil
+    user = User.find_by(uid: params[:user_id].to_i)
 
-    File.open(path, "wb") do |f|
+    File.open('tmp/cache/' + name, "wb") do |f|
       f.write(unpack.first)
+      @c = Collection.new(text: params[:text], image: f, location_id: params[:location_id].to_i, user: user)
     end
 
-    user = User.find_by(uid: params[:user_id].to_i)
-    @c = Collection.new(text: params[:text], image: name, location_id: params[:location_id].to_i, user: user)
     @c.save!
   end
 
