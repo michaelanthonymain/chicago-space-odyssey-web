@@ -10,7 +10,7 @@ class LocationsController < ApplicationController
 
   def collections
     @loc = Location.find(params[:id])
-    @colls = @loc.collections
+    @colls = @loc.collections.order("created_at DESC")
     respond_with @colls
   end
 end
